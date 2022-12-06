@@ -1,0 +1,725 @@
+
+<!-- saved from url=(0049)http://www.zlatnaserija.freeiz.com/zws/html5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Zagorove web stranice</title></head>
+<body bgcolor="ffffff">
+
+<!--VirtualAvenueBanner-->
+
+<center>
+<h2>Peti dio HTML predavanja</h2>
+
+
+<br><br><br>
+<table border="0" table="" width="85%" cellpadding="5" cellspacing="5">
+<tbody><tr><td>
+
+<font color="red">MENU:</font><br>
+<a href="http://www.zlatnaserija.freeiz.com/zws/html.html"><b>Prvo predavanje</b></a><br>
+<a href="http://www.zlatnaserija.freeiz.com/zws/html2.html"><b>Drugo predavanje</b></a><br>
+<a href="http://www.zlatnaserija.freeiz.com/zws/html3.html"><b>Trece predavanje</b></a><br>
+<a href="http://www.zlatnaserija.freeiz.com/zws/html4.html"><b>Cetverto predavanje</b></a><br>
+<b>Peto predavanje</b>
+
+<br><br>
+
+<font face="Verdana" size="2">
+U petom HTML predavanju cemo govoriti i pokusati da sto bolje naucimo
+koriscenje tabela. Svaki home page koji nesto vrijedi mora koristiti
+tabele. Sada bi neki rekli pa osim tabela postoji i bolji nacin a to
+su "Stylesheets" pomocu koji se moze bolje kontrolisati dizajn. To
+je istina ali tabele za sada ipak ostaju neprevazidjene i ako ih
+naucite da dobro koristite, imacete isti ucinak kao i sa "stylesheets".
+Ako niste culi i neznate sta su Stylesheets; ukratko to je stvar koja
+je na mala vrata izasla u javnost 1996 godine, a tek od 1998 ljudi
+su poceli da ih koriste u dizajnu malo masivnije. Pomocu njih mozete
+tacno u milimetar centrirati na stranici text, sliku ili bilo sta drugo.
+Ovo je takoreci nemoguce sa tabelama da uradimo ali tabele ipak imaju
+i mnogo drugih prednosti. Tabele mozete koristiti za mnoge stvari i
+ostaje sve na vasoj masti. HTML jeste jednostavan i nije tesko nauciti
+ali ipak trebate imati i malo dara da biste sa njim dobili tacno onakav
+rezultat kakav ste zamislili da ostvarite. To vremenom dolazi samo od sebe
+kada budete imali vise iskustva jer iako sam i ja naucio mnogo stvari
+u vezi web dizajna, ipak i dan danas mogu poboljsati nesto jer shvatim
+da ipak na crnoj stranici ljepse izgledaju svijetloplava slova nego crvena
+ili da je nekada bolje neku stranicu napraviti bez frejmova jer
+sadrzaj bolje izgleda, itd.. 
+Pricacemo mi i u vezi Stylesheets ali ipak za sada trebamo da
+usavrsimo tabele i onda tek poslije toga mozemo uciti Stylesheets.
+
+
+<br><br><br>
+
+<font face="Verdana" size="5" color="red">
+&lt;TABLE&gt; usavrsite svoje znanje tabela
+</font>
+
+<br><br>
+
+Osnovni tagovi za tebele su:<p>
+
+&lt;table&gt; <br>
+&lt;tr&gt; <br>
+&lt;td&gt; </p><p>
+
+I ovi tagovi se zavrsavaju sa:</p><p>
+
+&lt;/table&gt; <br>
+&lt;/tr&gt; <br>
+&lt;/td&gt; </p><p>
+
+Ovo su osnovni tagovi koji se koriste i koje zovemo tagovima, dok sve
+ostalo nazivamo atributima tih tagova. Atribute dodajemo u ove tagove
+i oni sluze tome da malo vise objasne kako ce tabela da izgleda.
+Na primjer, kolike ce biti duzine, koja je debljina okvira, koje je boje,
+koji je razmak izmedju polja itd..
+</p><p>
+&lt;table&gt; znaci da pocinjete tabelu i to je uvijek prvi tag.<br>
+
+&lt;tr&gt; znaci "table row" odnosno vodoravno polje.Ovaj tag uvijek
+mora pocinjati nakon tabele taga. U &lt;tr&gt; ubacujete &lt;td&gt; <br>
+
+&lt;td&gt; mora ulaziti u &lt;tr&gt; tag.<br>
+&lt;td&gt; znaci "table data" odnosno polje tabele. U ta polja ubacujemo sve sto zelimo da tabela sadrzi,
+od slika, tekstova, pa sve do cega vam srce zeli. Tabele se ne koriste
+samo da budu obicne tabele sa podacima, nego i da vam posluze da 
+centrirate i postavite sadrzaj na vasoj stranici tamo gdje vi hocete
+da se nalazi. To je malo teze ali mnogi bas koriste tabele za te stvari.
+Rekli smo da se sa Stylesheets moze bolje postaviti sadrzaj gdje mi hocemo
+da se nalazi na stranici, ali ni tabele nisu toliko daleko od toga, posebno
+ako malo bolje shvatite kako tabele funkcionisu.
+
+</p><p>
+
+Atributi koji cine &lt;table&gt; tag su sledeci:</p><p>
+
+border <br>
+width <br>
+cellpadding <br>
+cellspacing <br>
+rowspan <br>
+colspan <br>
+align <br>
+height (radi samo u Netscape navigatoru) <br>
+bgcolor </p><p>
+
+Atribute ubacujemo u &lt;table&gt; tag ali nije to dovoljno, nego
+moramo navesti i kakav ce taj atribut da bude.
+Na primjer atribut "border" znaci okvir i da bi naveli kolika ce
+debljina njegovog okvira biti napisali bi: </p><p>
+
+border="0" ili border="10" ili border="50" </p><p>
+
+Brojevi govore kolika ce debljina biti okvira tabele, "0" nula znaci
+da nece uopste imati okvira, dok broj "10" ili neki veci govori da
+ce debljina biti 10 ili vise. Border bi koristili ovako: </p><p>
+
+&lt;table border="0"&gt; <br>
+&lt;table border="10"&gt; <br>
+&lt;table border="50"&gt; </p><p>
+
+Mozete koristiti bilo koji broj.
+
+</p><p>
+
+Sledeci atribut je "width" sto oznacava duzinu tabele.
+Duzinu odredjujemo brojem ili postotkom. Kada sam u proslom predavanju
+o frejmovima odredjivao velicinu frejmova postotkom jedan tip mi je rekao
+na diskusiji o web dizajnu da je to primitivan nacin i da je bolje odredjivati
+pikselima. Pikseli su mjera za duzinu i sirinu, tako da bi na primjer
+ako imate ekran sa rezolucijom 800x600 vasa duzina ekrana bila 800 piksela
+a visina 600. Svejedno da li oznacavate duzinu postotkom ili pikselima, 
+to nije toliko vazno ali mnogi se osjecaju sigurnije kada odreduju pikselima.
+Mozda su ipak u pravu. Znaci atribut "width" bi oznacili sa pikselima: </p><p>
+
+
+width="350" <br>
+width="700" </p><p>
+
+Ili sa postotkom: </p><p>
+
+width="50%" <br>
+width="90%" </p><p>
+
+
+Kada mjerite duzinu tabele sa postotkom, broj postotka od 50% bi 
+znacio polovinu duzine vaseg ekrana. Atribut "width" bi ubacili u
+tabelu na ovaj nacin: </p><p>
+
+&lt;table width="350"&gt; ili sa postotkom<br>
+&lt;table width="50%"&gt; </p><p>
+
+Kada bi koristili "border" i "width" atribut zajedno to bi izgledalo
+ovako: </p><p>
+
+&lt;table border="10" width="350"&gt;
+
+</p><p>
+
+Sledeci atribut je "cellpadding" i obratite paznju da kada ga koristite
+da ga uvijek pravilno napisete inace nece djelovati. Cellpadding
+koristimo da oznacimo koliki ce da bude prostor u poljima tabele.
+Na primjer: </p><p>
+
+cellpadding="0" <br>
+cellpadding="5" </p><p>
+
+Mozete koristiti bilo koji broj dok "0" znaci da nece biti 
+nikakav prostor u poljima koji se proteze do granice polja.
+Ovaj atribut bi koristili u &lt;table&gt; tagu na sledeci nacin: </p><p>
+
+&lt;table cellpadding="0"&gt; <br>
+&lt;table cellpadding="5"&gt; </p><p>
+
+Sledeci atribut koji je brat od cellpadding atributa je cellspacing.
+Njega koristimo da bi oznacili koliki ce da bude razmak izmedju
+polja tabele. Na primjer: </p><p>
+
+cellspacing="0" <br>
+cellspacing="15" </p><p>
+
+Isto mozete koristiti bilo koji broj dok "0" oznacava da nece biti
+nikakvog prostora izmedju polja tako da ce polja biti spojena.<br>
+<b>Vazno:</b> <br>
+Ako hocete da polja u tabeli budu sastavljena onda morate u cellspacing
+ubaciti "0" jer je default broj "2" tako da ako ne ubaciti nikakav broj
+u cellspacing, onda ce vam polja biti razdvojena brojem "2"<br>
+Obratite paznju na ovo jer da ne bi ste rekli: "evo napravio sam tabelu
+u kojoj polja moraju biti spojena da se ne razdvajaju i nisam ubacivao
+cellspacing uopste a ona se ipak razdvajaju." <br>
+Morate ubaciti cellspacing="0" ako hocete da &lt;td&gt; polja budu
+spojena u tabeli. </p><p>
+
+Sledeci atributi su "rowspan" i "colspan" koji su isto tako braca
+kao i cellpadding i cellspacing. "rowspan" ubacujemo u tabelu da bi
+oznacili da se neko polje u tabeli razvuce toliko puta koliki broj
+stavite. Na primjer:
+
+rowspan="5" <br>
+rowspan="2" </p><p>
+
+Znaci rowspan oznacava da ce odredjeno polje biti razvuceno "5" puta u 
+omjeru na druga polja. Mozete staviti koliki broj hocete. <br>
+"colspan" je ista stvar samo sto razvlaci odredjeno polje
+uspravno a ne horizontalno kao rowspan. </p><p>
+
+<b>Vazno</b> <br>
+Znam da vam rowspan i colspan zvuce komplikovano, pogotovo sto jos nisam 
+pokazao na djelu kako se koriste. Oni jesu najvise komplikovani atributi
+ali su ipak mnogo vazni da bi ih preskocili. rowspan i colspan se vise
+koriste sa &lt;td&gt; tagom, a vrlo malo sa &lt;table&gt; i &lt;tr&gt;
+tagom tako da vam savjetujem da ove atribute vise koristite u
+&lt;td&gt; tagu. Kada dodjemo do &lt;td&gt; atributa pokazacu vam
+kako izgleda rowspan i colspan u praksi. Za sada nemojte puno
+misliti o tome jer se stvarno rijetko koriste u &lt;table&gt; tagu.
+
+</p><p>
+
+Sledeci atribut je "align" koji naredjuje tabeli gdje ce se ona
+nalaziti. Default je na lijevoj strani tako da ako hocete da se
+tabela nalazi na lijevoj strani, onda nemojte koristiti ovaj atribut.
+"align" bi koristili na sledeci nacin: </p><p>
+
+align="right" <br>
+align="center" </p><p>
+
+"right" znaci da se nalaziti na desnoj strani ekrana, dok "center"
+znaci da ce biti na centru ekrana. Atribut bi ubacili u &lt;table&gt;
+tag na sledeci nacin: </p><p>
+
+&lt;table align="right"&gt;  ili ako hocete na centar:<br>
+&lt;table align="center"&gt; </p><p>
+
+Atribut "height" znaci visina tabele i radi samo u Netscape navigatoru
+tako da necemo o njemu govoriti puno, ali radi kao i atribut "width"
+tako da ako hocete da ga koristite samo dodajte u njega broj koji
+ce oznaciti visinu. </p><p>
+
+
+Sledeci atribut koji je zanimljiv zove se "bgcolor" i on oznacava
+koja ce da bude boja pozadine u tabele. Na primjer: </p><p>
+
+&lt;table bgcolor="ffff00"&gt; <br>
+&lt;table bgcolor="006400"&gt; <br>
+&lt;table bgcolor="0000ff"&gt; </p><p>
+
+U praksi to bi izgledalo ovako: </p><p>
+
+<table bgcolor="ffff00">
+<tbody><tr><td>
+Test boje
+</td></tr>
+</tbody></table>
+</p><p>
+<table bgcolor="006400">
+<tbody><tr><td>
+Test boje
+</td></tr>
+</tbody></table>
+</p><p>
+<table bgcolor="0000ff">
+<tbody><tr><td>
+Test boje
+</td></tr>
+</tbody></table>
+
+
+</p><p>
+
+E ovo su tri male tabele u boji. Ja mnogo volim boje i ovaj atribut
+zna biti vrlo koristan. </p><p>
+
+
+Nakon sto smo objasnili atribute &lt;table&gt; taga, sada cemo navesti
+najvise koriscene atribute za &lt;tr&gt; tag. </p><p>
+
+width <br>
+rowspan <br>
+colspan <br>
+valign <br>
+bgcolor </p><p>
+
+"width" znaci kolika ce biti duzina &lt;tr&gt; taga, koji ce naravno
+da sadrzi &lt;td&gt; tagove. &lt;td&gt; rekli smo da oznacava polja
+u tabeli. Na primjer "width" bi koristili na sledeci nacin: </p><p>
+
+&lt;tr width="350"&gt; <br>
+&lt;tr width="50"&gt; mozete koristiti i postotak, na primjer: <br>
+&lt;tr width="35%"&gt; </p><p>
+
+Sledeci atributi su "rowspan" i "colspan" koji se rijetko koriste
+u &lt;tr&gt; tagu, a njihovu smo funkciju vec objasnili.
+
+</p><p>
+Sledeci atribut je "valign" atribut koji ima istu funkciju kao i
+&lt;table&gt; atribut "align"<br>
+Ocito da su momci u Netscape-u bili drogirani kada su pravili atribute.
+Znaci da ne bi bilo zabune, "valign" sluzi za to da odredite gdje
+ce &lt;tr&gt; se nalaziti. Na primjer: </p><p>
+
+&lt;tr valign="top"&gt; <br>
+&lt;tr valign="bottom"&gt; </p><p>
+&lt;tr valign="middle"&gt; </p><p>
+
+"top" znaci da ce &lt;tr&gt; u kojem se nalaze &lt;td&gt; polja biti
+postaviti gore, t.j sva polja u ovom &lt;tr&gt; tagu ce biti postavita
+u visinu. Pogledajte primjer: </p><p>
+
+<table border="1">
+<tbody><tr valign="top">
+<td> Sadrzaj<p>
+ ce biti</p><p>
+ postavit</p><p>
+ u visinu</p><p>
+ polja</p></td>
+<td> Ovo je<p>
+ drugo polje</p><p>
+ i sadrzaj</p><p>
+ je postavljen</p><p>
+ u visinu</p><p>
+ polja</p></td>
+</tr></tbody></table>
+
+</p><p>
+Ovo je vrlo vazan atribut, uvidjecete to vremenom jer tabele koriste
+default "middle" tako da cete morati specifirati "top" ili bottom" </p><p>
+
+Pogledajte ovu istu tabelu u kojoj nismo postavili atribut "top" </p><p>
+
+<table border="1">
+<tbody><tr>
+<td> Sadrzaj<p>
+ ce biti</p><p>
+ postavit</p><p>
+ u visinu</p><p>
+ polja</p></td>
+<td> Ovo je<p>
+ drugo polje</p><p>
+ i sadrzaj</p><p>
+ je postavljen</p><p>
+ u visinu</p><p>
+ polja</p></td>
+</tr></tbody></table>
+ </p><p>
+
+Vidite li koja je razlika izmedju tabele sa "top" atributom i tabele
+bez "top" atributa?
+E sada pogledajte tabelu sa atributom "bottom" </p><p>
+
+<table border="1">
+<tbody><tr valign="bottom">
+<td> Sadrzaj<p>
+ ce biti</p><p>
+ postavit</p><p>
+ u visinu</p><p>
+ polja</p></td>
+<td> Ovo je<p>
+ drugo polje</p><p>
+ i sadrzaj</p><p>
+ je postavljen</p><p>
+ u visinu</p><p>
+ polja</p></td>
+</tr></tbody></table>
+
+</p><p>
+Kao sto vidite, raspored polja u svim tabelama je drugaciji, tako
+da dolazimo do zakljucka da je atribut "top" i "bottom" vrlo korisna stvar.
+Vremenom cete ovo usavrsiti ali za sada potrebno je da znate da svaka
+tabela mora imati "valign" atribut u &lt;tr&gt; ili &lt;td&gt; tagu tako
+da bi mogla da izgleda profesionalno.
+ valign="middle" je default i nije potrebno da ga koristite jer ga
+tabela sama ubacuje ako ne ukljucite "top" ili "middle"
+u valign atribut.
+
+</p><p>
+
+Dobro obratite paznju na ove tri tabele u koje smo u &lt;tr&gt; tag
+ubacili "top", "middle"(koji je default) i "bottom".
+Ovo je vrlo vazna stvar i naravno nije uopste teska shvatiti.
+</p><p>
+
+Sledeci atribut je "bgcolor". </p><p>
+<b>Vazno</b><br>
+Ne zaboravite da je &lt;tr&gt; tag samo objekat u kojem se nalaze
+&lt;td&gt; tagovi i <b>samo</b> &lt;td&gt; tagovi mogu da sadrze
+sadrzaj koji zelite da stavite u tabelu. &lt;tr&gt; atributi direktno
+utjecaju na &lt;td&gt; polja tako da kada koristite &lt;tr&gt; atribute
+vi zapravo utjecete na sva &lt;td&gt; polja koje taj &lt;tr&gt; tag
+sadrzi. Mozda malo zvuci komplikovano u teoriji, ali u praksi ce vam
+vjerujem biti mnogo lakse kada budete ove stvari trenirali.
+</p><p>
+"bgcolor" bi koristili ovako: </p><p>
+
+&lt;tr bgcolor="006400"&gt; <br>
+&lt;tr bgcolor="0000ff"&gt; </p><p>
+
+Znaci kada postavite boju u pozadinu &lt;tr&gt; taga, vi direktno
+utjecete da sva polja u tabeli budu iste boje koju ste naveli.
+Ako hocete da svako polje u tabeli ima drugaciju boju u pozadini, 
+onda cete koristiti atribut "bgcolor" u &lt;td&gt; tagovima. </p><p>
+
+
+O ovome cemo vise govoriti kada budemo objasnjavali &lt;td&gt; atribute.
+Najvise korisceni &lt;td&gt; atributi su: </p><p>
+
+width <br>
+rowspan <br>
+colspan <br>
+valign <br>
+bgcolor </p><p>
+
+Atribut "width" se koristi da se oznaci kolika ce biti duzina
+&lt;td&gt; taga. Na primjer: </p><p>
+
+&lt;td width="450"&gt; <br>
+&lt;td width="200"&gt; ili sa postotkom: <br>
+&lt;td width="35%"&gt; </p><p>
+
+E sada dolaze "rowspan" i "colspan" atributi koji su vrlo vazni
+a sluze kao sto smo rekli da razvuku odredjeno polje u promjeru
+nekoliko polja, a sve to u zavisnosti koji broj unesete u atribut.
+Na primjer pogledajte: </p><p>
+
+<b>Rowspan atribut u tabeli:</b> </p><p>
+
+<table border="1">
+<tbody><tr>
+<td rowspan="3">
+Test rowspan atributa
+</td>
+
+<td>
+Test rowspan atributa
+</td>
+</tr>
+
+<tr>
+<td>
+Test rowspan atributa
+</td>
+</tr>
+
+<tr>
+<td>
+Test rowspan atributa
+</td>
+
+</tr>
+</tbody></table>
+
+</p><p>
+
+Vidite kako je jedno polje razvuceno u promjeru na ostala tri polja.
+Ovi atributi su vrlo vazni zbog toga sto mozemo da bolje dizajniramo
+tabele tako da u prvo polje mozete da stavite svoju sliku, a u ostala
+tri polja informacije o sebi. Pogledajte kako smo koristili "rowspan"
+atribut i kako smo to izveli: </p><p>
+
+
+&lt;tableborder="1"&gt; <br>
+&lt;tr&gt; <br>
+&lt;td rowspan="3"&gt; <br>
+Test rowspan atributa <br>
+&lt;/td&gt; </p><p>
+
+&lt;td&gt; <br>
+Test rowspan atributa <br>
+&lt;/td&gt; <br>
+&lt;/tr&gt; </p><p>
+
+&lt;tr&gt; <br>
+&lt;td&gt; <br>
+Test rowspan atributa <br>
+&lt;/td&gt; <br>
+&lt;/tr&gt; </p><p>
+
+&lt;tr&gt; <br>
+&lt;td&gt; <br>
+Test rowspan atributa <br>
+&lt;/td&gt; </p><p>
+
+&lt;/tr&gt; <br>
+&lt;/table&gt; </p><p>
+
+Eto kako smo napravili tabelu sa "rowspan" atributom. rowspan zapravo
+znaci da polja u tabeli razvucete vodoravno dok su ona kao sto vidimo
+razvucena uspravno u visinu. Jos jedan dokaz da su Netscape inzinjeri
+bili na drogama kada su pravili atribute tabele. Ipak ovi atributi
+nisu teski nauciti da ih koristite iako tako izgleda. Potrebno je da
+shvatite kako tabele funkcionisu i sve ce vam biti lakse. Bas zato,
+trudim se da vam u detalje objasnim da sto lakse shvatite. </p><p>
+
+<b>Vazno</b> <br>
+Obratite paznju da su prva dva polja u istom vodoravnom redu, dok
+su ostala &lt;td&gt; polja u posebnim &lt;tr&gt; tagovima. Ovo je
+vrlo vazno da znate jer u suprotnom cete imati greske i rowspan
+atribut vam nece raditi kako treba. Kod "colspan" atributa je drugacije
+sto cete uskoro vidjeti. </p><p>
+
+
+"colspan" atribut koristimo da razvucemo odredjeno polje u tabeli 
+vodoravno u promjeru na ostala polja. Kao i uvijek u teoriji malo
+zvuci komplikovano dok u praksi je lakse shvatiti. Zbog toga evo jedan
+primjer tabele sa colspan atributom u sebi: </p><p>
+
+<table border="1">
+<tbody><tr>
+<td colspan="3">
+Test colspan atributa
+</td>
+</tr>
+
+<tr>
+<td>
+Test colspan atributa
+</td>
+
+<td>
+Test colspan atributa
+</td>
+
+<td>
+Test colspan atributa
+</td>
+
+</tr>
+</tbody></table> </p><p>
+
+Kao sto vidite, prvo polje je razvuceno vodoravno u promjeru na ostala
+polja. Posto ostalih polja ima 3, mi smo stavili colspan="3" tako da se
+je polje razvuklo tri puta; a da smo stavili colspan="2" onda bi to
+izgledalo ovako: </p><p>
+
+<table border="1">
+<tbody><tr>
+<td colspan="2">
+Test colspan atributa
+</td>
+</tr>
+
+<tr>
+<td>
+Test colspan atributa
+</td>
+
+<td>
+Test colspan atributa
+</td>
+
+<td>
+Test colspan atributa
+</td>
+
+</tr>
+</tbody></table> </p><p>
+
+Vidite da je sada polje razvuceno 2 puta, dok je trece polje prazno.
+Nikada kraja eksperimentisanju sa tabelama i njenim atributima. I
+da ne zaboravim da vam pokazem kako je ovo izvedeno: </p><p>
+
+&lt;tableborder="1"&gt; <br>
+&lt;tr&gt; <br>
+&lt;td colspan="3"&gt; <br>
+Test colspan atributa <br>
+&lt;/td&gt; <br>
+&lt;/tr&gt; </p><p>
+
+&lt;tr&gt; <br>
+&lt;td&gt; <br>
+Test colspan atributa <br>
+&lt;/td&gt; </p><p>
+
+&lt;td&gt; <br>
+Test colspan atributa <br>
+&lt;/td&gt; </p><p>
+
+&lt;td&gt; <br>
+Test colspan atributa <br>
+&lt;/td&gt; </p><p>
+
+&lt;/tr&gt; <br>
+&lt;/table&gt; </p><p>
+
+Kao sto vidite prvo polje u tabeli koje smo razvukli se nalazi
+u jednom &lt;tr&gt; tagu, dok su ostala polja u drugom
+&lt;tr&gt; tagu u kojem se sva nalaze. Znaci malo drugaciji raspored
+nego u "rowspan" tabeli gdje je polje koje smo razvukli dijelilo
+&lt;tr&gt; tag zajedno sa jednim poljem, dok su ostala polja
+imala svoje vlastite &lt;tr&gt; tagove u kojim su se nalazila. </p><p>
+
+Vrlo korisni atributi i naravno malo djeluju zbunjujuce ali vjerujte
+da mi nije cilj da vas zaboli glava i da odustanete jer vam mozda
+izgleda pretesko. Eksperimentisite do mile volje, i nekoliko puta
+pazljivo procitajte ovo predavanje da bi ste bolje shvatili. </p><p>
+
+Sledeci atribut o kojem smo vec govorili je "valign" <br>
+Ovaj atribut se isto moze koristiti u &lt;tr&gt; tagu, ali ipak
+nalazi i na siroku primjenu u &lt;td&gt; tagovima. Dok u &lt;tr&gt;
+tagu "valign" kada stavite, on direktno utjece na sva &lt;td&gt; polja
+koja se nalaze u &lt;tr&gt; tagu, u tabeli nekada zelimo da sadrzaj
+jednog polja bude podesen uspravno dok u drugom polju sadrzaj hocemo
+da bude u sredini ili na dnu. Na primjer: </p><p>
+
+&lt;td valign="top"&gt; <br>
+&lt;td valign="bottom"&gt; </p><p>
+
+&lt;td valign="middle"&gt; je default ako ne koristite valign
+atribut u &lt;td&gt; tagovima. "middle" znaci centar ili sredina. </p><p>
+
+Sledeci atribut je "bgcolor" koji dodaje boju u pozadinu &lt;td&gt;
+taga. Koristimo ga na isti nacin kao i u &lt;tr&gt; tagu. Na primjer: </p><p>
+
+&lt;td bgcolor="006400"&gt; <br>
+&lt;td bgcolor="ffff00"&gt; <br>
+&lt;td bgcolor="0000ff"&gt; </p><p>
+
+Mozete koristiti umjesto broja, naziv odredjene boje koji mora
+biti na Engleskom jeziku. Na primjer: </p><p>
+
+
+&lt;td bgcolor="green"&gt; <br>
+&lt;td bgcolor="blue"&gt; <br>
+&lt;td bgcolor="yellow"&gt; </p><p>
+
+Za sada toliko. Trudio sam se da vam objasnim sto je moguce vise da
+lakse shvatite. Ja volim tabele i vjerujem da cete ih i vi zavoliti
+jednog dana kada shvatite potpuno kako one funkcionisu. Kao i obicno
+govorio sam sto je jednostavnije moguce, mozda ima jos nekih atributa
+ali vjerujte mi da se oni slabo koriste i da nisu bas mnogo korisni
+i neophodni. Na primjer, nisam spomenuo atribut: </p><p>
+
+&lt;td nowrap&gt; </p><p>
+
+Ovaj atribut nije mnogo vazan i jos neki sa njim, i zbog toga nezelim
+da vas davim nepotrebnim informacijama. Mnogi kazu da tabele je
+lakse praviti nekim programima kao sto je Macromedia dreamwaver, ali
+vjerujte mi da ti programi koriste mnogo nepotrebnih tagova i atributa
+sto se negativno odrazava na browsere koji zbog toga se znaju rusiti
+a i stranice se duze ocitavaju. Cak i ako koristite neki program
+vi morate nauciti HTML, a sada da li cete ga praviti u text editoru
+ili u tom programu, to sve ostaje na vama. Moje stranice se brze
+ucitavaju jer ne sadrze nepotrebne tagove i ostalo sto dolazi sa njima.
+Ja pravim web stranice u note pad programu jer mislim da je web dizajn
+ono sto me mnogo zanima za sada u zivotu i zbog toga necu da se
+oslanjam mnogo na programe. HTML je lagan ali nije sve ni u tome, nego
+morate imati i dosta iskustva i ukusa kao i poznavanje java scripti,
+DHTML, jave, stylesheets itd.. Sve to vremenom dolazi i programi ce
+vam tesko te stvari sami uraditi. Na primjer ako dobijete Perl script
+da ga instalirate na server, ni u kom slucaju nikakav program to nemoze
+uraditi za vas. Mozete me nazvati computer geek ili manijakom, ali 
+ako mi treba program da obradim neku sliku, ja cu ga i koristiti,
+dok za HTML i ostalo sto sa tim ide mi za sada netreba nista osim
+text editora i volje da sto vise stvari naucim u vezi web dizajna.
+Nadam se da cete koristiti table na lijep nacin i da ce vam biti od
+koristi. :))
+
+
+<br><br><br>
+
+Mislim da sam u ovih pet HTML predavanja mnogo rekao da bi ste mogli
+napraviti dobar home page ili web site. Ima nekih tagova sigurno koje
+sam zaboravio spomenuti ali oni vjerovatno nisu toliko vazni i
+neophodni. Evo jedan beskorisni tag koji sam zaboravio spomenuti: </p><p>
+
+Ovo je beskorisni tag <sub>koji nicemu ne sluzi, ili </sub>mozda nije tako?
+
+</p><p>
+Hehehee vidite kako je jedan dio teksta malo se smanjio i spustio se
+dole. Evo kako smo to uradili: </p><p>
+
+Ovo je beskorisni tag &lt;sub&gt; koji nicemu ne sluzi, ili&lt;/sub&gt; mozda nije tako?
+
+
+</p></font><p><font face="Verdana" size="2">
+Kao sto vidite, nije lose ali bas i nije toliko vazan tag.
+Pozdrav i hvala na strpljenju.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</font>
+</p></td></tr></tbody></table></center>
+
+<br><br>
+
+<center>
+<font face="Verdana" size="2">
+<b>U sledecem broju: <i>Java Scripts i Java</i></b>
+
+<br><br>
+  <b>Copyright <a href="http://www.zlatnaserija.freeiz.com/zws/index.html"> Zagorove web 
+  stranice '98</a></b> </font> 
+</center>
+
+<br><br>
+
+<center>
+<a href="http://www.zlatnaserija.freeiz.com/zws/d.html">
+<img border="0" src="./Zagorove web stranice_files/nazad.jpg"></a>
+</center>
+<br><br>
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="./Zagorove web stranice_files/count.php"></script>
+<!-- End Of Analytics Code -->
+</body></html>

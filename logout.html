@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>HotSpot > Odjava</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<link rel="stylesheet" href="gmi.css" type="text/css" media="screen" />
+</head>
+
+<body>
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+
+<center>
+<table class="main" width="959">
+	<tr height="30"><td colspan="2">
+		<div class="menu"><ul><li><a href="status.html">Pocetak</a></li><li><a href="price.html">Cijene</a></li><li><a href="benefit.html">Prednosti</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>	
+		</td>
+	</tr>
+	<tr height="10"><td colspan="2">&nbsp;</td></tr>
+	<tr height="415" valign="top" ><td colspan="2">
+			<table class="tabula">
+					<tr><td colspan="2">&nbsp;</td></tr>
+					<tr><td colspan="2">
+						<div class="notice">Hvala sto ste koristili naše usluge</b><br />
+						<font size="1"><b>Odjavljeni ste,</b> Vaši cookies su obrisani!</font></div><br>
+					</td></tr>
+					<tr><td colspan="2" align="center"><b>Informacije</b></tr></td>
+					<tr><td><table class="data">
+					<tr><td align="right">Korisnicko ime:</td><td>$(username)</td></tr>
+					<tr><td align="right">IP adresa:</td><td>$(ip)</td></tr>
+					<tr><td align="right">MAC adresa:</td><td>$(mac)</td></tr>
+					<tr><td align="right">Vrijeme koristenja:</td><td>$(uptime)</td></tr>
+					$(if session-time-left)
+					<tr><td align="right"><font style="color: red; font-weight: bold;">Preostalo vrijeme:</font></td><td><font style="color: red; font-weight: bold; font-size: 15px;">$(session-time-left)</font></td></tr>
+					$(endif)
+					<tr><td align="right">kolicina podataka:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+					</table></td></tr>
+			</table>
+				<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+				<br /><input type="submit" class="button" value="Relogin">
+			</form>
+	</td></tr>
+	<tr height="75" valign="top"><td align="center" colspan="2">
+		<div class="footer">Hotspot ver. 0.2 <a href="http://www.poen.net"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a>. &copy; 2007 - 2013 Sva prava pridrzana<br />
+		Svi korisnici usluga Poen.Net-a podlijezu <a href="http://www.poen.net/terms_of_services" target="_blank"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: red;">Uslovima koristenja</font></a> <a href="http://www.poen.net"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a><br />
+		Preporucujemo upotrebu <a href="http://www.google.com/chrome" target="_blank"><font style="font-size: 9px; font-family: arial; color: green;">Google Chrome</font></a> kao osnovnog pretrazivaca <br />
+		Ova strana je najbolje vidljiva na rezoluciji ekrana 1024x768 piksel-a.
+	</td></tr>	
+</center>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>HotSpot.Net > Status</title>
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+$(endif)
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<link rel="stylesheet" href="gmi.css" type="text/css" media="screen" />
+
+<script language="JavaScript">
+<!--
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+	if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+	popup = open('$(link-advert)', 'hotspot_advert', '');
+	setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+</head>
+<body bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0"
+$(if advert-pending == 'yes')
+	onLoad="openAdvert()"
+$(endif)
+>
+<center>
+<table class="main-status" width="959">
+	<tr height="30"><td colspan="2">
+		<div class="menu"><ul><li><a href="status.html">Pocetak</a></li><li><a href="price.html">Cijene</a></li><li><a href="benefit.html">Prednosti</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>	
+		</td>
+	</tr>
+	<tr><td valign="top">
+		<table>
+			<tr height="435"><td valign="top" width="400">
+			<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+				<table class="tabula" valign="top">
+					<tr><td colspan="2" valign="top">
+						$(if login-by == 'trial')
+							<div class="notice">Pozdrav, probni korisnice!</div><br>
+						$(elif login-by != 'mac')
+							<br><div class="notice">Dobro dosao nazad,<b> $(username)!</b></div><br>
+						$(endif)
+					</td></tr>
+					<tr><td colspan="2" align="center"><font style="color: red; font-weight: bold; font-size: 16px;">Informacije</font></td></tr>
+					<tr><td><table class="data">
+					<tr><td align="right">IP adresa :</td><td>$(ip)</td></tr>
+					<tr><td align="right">MAC adresa :</td><td>$(mac)</td></tr>
+					<tr><td align="right">Kolicina podataka :</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+				$(if session-time-left)
+					<tr><td align="right">Duzina konekcije :</td><td>$(uptime)</td></tr>
+					<tr><td align="right"><font style="color: red; font-weight: bold;">Preostalo vrijeme:</font></td><td><font style="color: red; font-weight: bold; font-size: 15px;">$(session-time-left)</font></td></tr>	
+				$(else)
+					<tr><td align="right">aktivan :</td><td>$(uptime)</td></tr>
+				$(endif)
+				$(if blocked == 'yes')
+					<tr><td align="right">status :</td><td><div style="color: #FF8080">
+					<a href="$(link-advert)" target="hotspot_advert">reklama</a> obavezna</div></td>
+				$(elif refresh-timeout)
+					<tr><td align="right">status obnovljen:</td><td>$(refresh-timeout)</td>
+				$(endif)
+				</table>
+				$(if login-by-mac != 'yes')
+				<br>
+				<!-- user manager link. if user manager resides on other router, replace $(hostname) by its address
+				<button onclick="document.location='http://$(hostname)/user?subs='; return false;">status</button>
+				<!-- end of user manager link -->
+				<input type="submit" class="button" value="Odjava">
+				$(endif)
+			</form>
+			</td></tr>
+		</table>
+<!--
+			<div class="inf-status">Anda bisa mengakses :<br>
+						FileServer GmiB26.Net : <a href="http://fileserver.gmib26.net:88/" target="_blank"><font style="font-size: 10px; font-family: arial; color: green;">http://fileserver.gmib26.net:88/</font></a><br>
+						Digital Al-Qur'an : <a href="http://al-quran.gmib26.net/" target="_blank"><font style="font-size: 10px; font-family: arial; color: green;">http://al-quran.gmib26.net/</font></a><br>
+						<br>Username : <font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">member</font><br>
+						Password &nbsp;: <font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">membergmib26net</font>
+			</div>
+-->
+		</td>
+<!--
+	<td width="550" valign="top" class="judul-update">GmiB26.Net Update :<br />
+				<br /><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgmib26net&amp;width=400&amp;height=200&amp;colorscheme=light&amp;show_faces=false&amp;border_color=false&amp;stream=true&amp;header=false&amp;appId=131551926866396" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	</td>
+-->
+		</tr>
+	<tr height="75" valign="top"><td align="center">
+		<div class="footer">Hotspot ver. 0.2 <a href="http://www.poen.net"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a>. &copy; 2007 - 2013 Sva prava pridrzana<br />
+		Svi korisnici usluga Poen.Net-a podlijezu <a href="http://www.poen.net/terms_of_services" target="_blank"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: red;">Uslovima koristenja</font></a> <a href="http://www.poen.net"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a><br />
+		Preporucujemo upotrebu <a href="http://www.google.com/chrome" target="_blank"><font style="font-size: 9px; font-family: arial; color: green;">Google Chrome</font></a> kao osnovnog pretrazivaca <br />
+		Ova strana je najbolje vidljiva na rezoluciji ekrana 1024x768 piksel-a.
+	</td></tr>
+	</table>
+</center>
+</body>
+</html>

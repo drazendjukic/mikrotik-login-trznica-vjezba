@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>HotSpot > Prijava</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<link rel="stylesheet" href="gmi.css" type="text/css" media="screen" />
+<script src="jquery-latest.pack.js" type="text/javascript"></script>
+<script src="jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	$(".newsticker-jcarousellite").jCarouselLite({
+		vertical: false,
+		hoverPause:true,
+		visible: 1,
+		auto:3000,
+		speed:1000
+	});
+});
+</script>
+
+</head>
+<body bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0">
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="status" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+<center>
+<table class="main-login" width="959">
+	<tr height="30"><td colspan="2">
+		<div class="menu"><ul><li><a href="status.html">Pocetak</a></li><li><a href="price.html">Cijene</a></li><li><a href="benefit.html">Prednosti</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>
+		</td>
+	</tr>
+	<tr height="10"><td colspan="2">&nbsp;</td></tr>
+	<tr height="30"><td class="welcome">
+		<font size="2" type="verdana">Dobro došao, <b>Posjetioce!</b></font><br><font size="1" type="verdana">Molim vas, prvo se prijavite!</font>
+	</td><td></td></tr>
+	<tr height="375" valign="top" ><td colspan="2">
+		<table>
+			<tr><td width="220" class="isi">
+				<table class="login">
+					<form name="login" action="$(link-login-only)" method="post"
+						$(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+
+						<tr><td colspan="2">&nbsp;</td></tr>
+						<tr><td class="judul">Korisnicko ime:</td><td><input class="isian" name="username" type="text" value="$(username)"/></td></tr>
+						<tr><td class="judul">Šifra:</td><td><input class="isian" name="password" type="password"/></td></tr>
+						<tr><td colspan="2" align="center"><input type="submit" class="button" value="Prijava" /></td></tr>
+						<tr><td colspan="2" align="center">$(if error)<div style="color: red; font-size: 10px; text-decoration: blink;"><blink><b><script type="text/javascript">
+var error = "$(error)";
+if (error == "Dostignut limit kredita")
+{
+document.write("Vaš kredit je istekao| ");
+}
+if (error == "uptime limit reached")
+{
+document.write("Potrošili ste besplatne kredite| ");
+}
+if (error == "download limit reached")
+{
+document.write("Prekoracili ste limite na kreditu | ");
+}
+if (error == "no valid profile found")
+{
+document.write("Vaš nalog $(username) nema aktivni internet paket | ");
+}
+if (error == "invalid password")
+{
+document.write("Šifra koju ste unijeli nije ispravna | ");
+}
+if (error == "simultaneous session limit reached")
+{
+document.write("Korisnik $(username) je vec prijavljen ili aktivan. Morate se prvo odjaviti.");
+}
+else {
+document.write("$(error)");
+} 
+</script></b></blink></div>$(endif)</td></tr>
+
+					</form>
+				</table>
+			</td>
+			<td align="center" valign="top" width="739">
+					<table class="boxiklan">
+					<tr><td align="center">
+					<iklan>AKCIJA!!<br>Popust 50% za nove korisnike HotSpot-a.<br>Besplatna registracija do 31. marta 2013.godine<br>dodatne informacije: <a href="http://www.poen.net/" target="_blank" >kliknite OVDJE</a></iklan>
+					</td></tr>
+					</table>
+			</td>
+			</tr>
+			<tr><td align="center"><font style="font-size: 9px; font-family: verdana;">Klikom na "Prijava" znaci da pristajete da se pridržavate i prihvatate</font> <a href="http://www.poen.net.net/terms_of_services" target="_blank">
+			<font style="font-size: 9px; font-family: verdana; font-weight: bold; color: red;">Uslove korištenja</font></a> <a href="http://www.poen.net"><font style="font-size: 9px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a></td><td align="center" valign="middle" height="120">
+				<table>
+					<tr><td></td><td class="benefitgerak" width="350" height="75">
+						<div id="newsticker-demo">
+	    					<div class="newsticker-jcarousellite">
+						<ul>
+            				<li> Jeftini i pristupacni paketi sa kvalitetnom konekcijom </li>
+							<li> Veliki izbor paketa, vremenski ograniceni i neograniceni dnevni/ sedmicni/ mjesecni</li>
+							<li> Kvalitetna lokalna mreža i internet link garantuju stabilu i brzu vezu</li>
+						</ul>
+    						</div>
+						</div><br /><a href="benefit.html"><font size="1">Procitajte sve prednosti</font></a>
+				</table>
+			</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr height="75" valign="top"><td align="center" colspan="2">
+		<div class="footer">Hotspot ver. 0.2 <a href="http://www.poen.net"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a>. &copy; 2007 - 2013 Sva prava pridržana<br />
+		Svi korisnici usluga Poen.Net-a podliježu <a href="http://www.poen.net/terms_of_services" target="_blank"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: red;">Uslovima korištenja</font></a> <a href="http://www.poen.net"><font style="font-size: 10px; font-family: verdana; font-weight: bold; color: purple;">Poen.Net</font></a><br />
+		Preporucujemo upotrebu <a href="http://www.google.com/chrome" target="_blank"><font style="font-size: 9px; font-family: arial; color: green;">Google Chrome</font></a> kao osnovnog pretraživaca <br />
+		Ova strana je najbolje vidljiva na rezoluciji ekrana 1024x768 piksel-a.
+	</td></tr>
+</table>
+</center>
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+</body>
+</html>
